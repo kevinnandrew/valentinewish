@@ -206,7 +206,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: -50,
         // scale: 0.3,
-        // rotation: 150,
+        rotation: 150,
         skewX: "30deg",
         ease: Elastic.easeOut.config(1, 0.5),
       },
@@ -217,7 +217,7 @@ const animationTimeline = () => {
       0.7,
       {
         scale: 1.4,
-        // rotationY: 150,
+        rotationY: 150,
       },
       {
         scale: 1,
@@ -238,23 +238,23 @@ const animationTimeline = () => {
       },
       "party"
     )
-    .staggerTo(
-      ".eight svg",
-      1.5,
-      {
-        visibility: "visible",
-        opacity: 0,
-        scale: 80,
-        repeat: 3,
-        repeatDelay: 1.4,
-      },
-      0.3
-    )
-    .to(".six", 0.5, {
-      opacity: 0,
-      y: 30,
-      zIndex: "-1",
-    })
+    // .staggerTo(
+    //   ".eight svg",
+    //   1.5,
+    //   {
+    //     visibility: "visible",
+    //     opacity: 0,
+    //     scale: 80,
+    //     repeat: 3,
+    //     repeatDelay: 1.4,
+    //   },
+    //   0.3
+    // )
+    // .to(".six", 0.5, {
+    //   opacity: 0,
+    //   y: 30,
+    //   zIndex: "-1",
+    // })
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
